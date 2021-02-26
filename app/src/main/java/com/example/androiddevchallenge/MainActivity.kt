@@ -92,7 +92,7 @@ fun MyApp() {
 fun PuppyDetails(puppy: Puppy) {
     val typography = MaterialTheme.typography
 
-    Column {
+    Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
         val image =
             loadPicture(url = puppy.url, defaultImage = R.drawable.ic_launcher_foreground)
         image.component1()?.let {
