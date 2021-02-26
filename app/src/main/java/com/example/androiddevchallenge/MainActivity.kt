@@ -46,7 +46,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
-import androidx.navigation.compose.*
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import androidx.navigation.compose.navArgument
+import androidx.navigation.compose.navigate
 import com.example.androiddevchallenge.data.pupies.impl.BlockingFakePuppiesRepository
 import com.example.androiddevchallenge.data.pupies.impl.puppies
 import com.example.androiddevchallenge.data.successOr
